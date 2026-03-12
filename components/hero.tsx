@@ -242,7 +242,7 @@ export default function Hero() {
           alt="WashWala app mockup showing live order tracking"
           width={280}
           height={540}
-          quality={90}
+          quality={75}
           priority={false}
           style={{
             borderRadius: '40px',
