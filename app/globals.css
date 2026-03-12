@@ -1,0 +1,143 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* WashWala Brand Colors */
+  --cream: #fdf8f2;
+  --warm-50: #fef9f4;
+  --warm-100: #fdeedd;
+  --warm-200: #f9d9b8;
+  --teal: #2a9d8f;
+  --teal-light: #52b5a9;
+  --teal-pale: #e0f4f2;
+  --coral: #e76f51;
+  --sand: #e9c46a;
+  --ink: #1a1a2e;
+  --ink-muted: #4a4a6a;
+  --ink-light: #7a7a9a;
+  --white: #ffffff;
+  
+  /* Semantic Design Tokens */
+  --background: #fdf8f2;
+  --foreground: #1a1a2e;
+  --card: #ffffff;
+  --card-foreground: #1a1a2e;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a2e;
+  --primary: #2a9d8f;
+  --primary-foreground: #fff;
+  --secondary: #52b5a9;
+  --secondary-foreground: #fff;
+  --muted: #fdeedd;
+  --muted-foreground: #7a7a9a;
+  --accent: #e76f51;
+  --accent-foreground: #fff;
+  --destructive: #e76f51;
+  --destructive-foreground: #fff;
+  --border: rgba(42, 157, 143, 0.1);
+  --input: #fdf8f2;
+  --ring: #2a9d8f;
+  --chart-1: #2a9d8f;
+  --chart-2: #e76f51;
+  --chart-3: #e9c46a;
+  --chart-4: #52b5a9;
+  --chart-5: #3A6A90;
+  --radius: 0.875rem;
+  --sidebar: #FFFDF9;
+  --sidebar-foreground: #1A1A2E;
+  --sidebar-primary: #4A7FA5;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #3D9B8F;
+  --sidebar-accent-foreground: #fff;
+  --sidebar-border: rgba(74, 127, 165, 0.15);
+  --sidebar-ring: #4A7FA5;
+}
+
+.dark {
+  --background: #0F0F1F;
+  --foreground: #F5F5F9;
+  --card: #1A1A2E;
+  --card-foreground: #F5F5F9;
+  --popover: #1A1A2E;
+  --popover-foreground: #F5F5F9;
+  --primary: #6B9FBD;
+  --primary-foreground: #0F0F1F;
+  --secondary: #5A8AA8;
+  --secondary-foreground: #F5F5F9;
+  --muted: #2D2D3F;
+  --muted-foreground: #A5A5BF;
+  --accent: #5BB5A3;
+  --accent-foreground: #0F0F1F;
+  --destructive: #FF6B5A;
+  --destructive-foreground: #0F0F1F;
+  --border: rgba(107, 159, 189, 0.2);
+  --input: #2D2D3F;
+  --ring: #6B9FBD;
+  --chart-1: #6B9FBD;
+  --chart-2: #5BB5A3;
+  --chart-3: #FFB84D;
+  --chart-4: #FF8B7A;
+  --chart-5: #5A8AA8;
+  --sidebar: #1A1A2E;
+  --sidebar-foreground: #F5F5F9;
+  --sidebar-primary: #6B9FBD;
+  --sidebar-primary-foreground: #0F0F1F;
+  --sidebar-accent: #5BB5A3;
+  --sidebar-accent-foreground: #0F0F1F;
+  --sidebar-border: rgba(107, 159, 189, 0.2);
+  --sidebar-ring: #6B9FBD;
+}
+
+@theme inline {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
