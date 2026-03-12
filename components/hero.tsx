@@ -237,6 +237,34 @@ export default function Hero() {
         }}
         className="hidden lg:flex"
       >
+        <Image
+          src="/hero-phone-mockup.jpg"
+          alt="WashWala app mockup showing live order tracking"
+          width={280}
+          height={540}
+          quality={75}
+          priority={false}
+          style={{
+            borderRadius: '40px',
+            boxShadow: '0 40px 100px rgba(26,26,46,0.18), 0 0 0 8px rgba(42,157,143,0.08)',
+            border: '2px solid rgba(42,157,143,0.12)',
+            animation: 'phoneFloat 6s ease-in-out infinite',
+            objectFit: 'cover',
+          }}
+        />
+      </div>
+
+      {/* Fallback Phone Mockup - Mobile friendly alternative */}
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          position: 'relative',
+          animation: 'fadeUp 0.8s ease 0.3s both',
+        }}
+        className="lg:hidden"
+      >
         <div
           style={{
             width: '280px',
