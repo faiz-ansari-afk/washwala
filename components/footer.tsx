@@ -1,3 +1,4 @@
+"use client"
 export default function Footer() {
   return (
     <footer style={{ background: 'var(--ink)', color: 'rgba(255,255,255,0.7)', padding: '60px 5% 32px' }}>
