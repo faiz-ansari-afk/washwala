@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
+
+export const metadata: Metadata = {
+  title: 'WashWala Pricing | Transparent Per-Item Laundry Rates',
+  description: 'Simple, transparent per-item laundry pricing. Shirts ₹30, Pants ₹40, Sarees ₹60. No hidden charges, no surprises.',
+  openGraph: {
+    title: 'WashWala Pricing Plans',
+    description: 'Clear, per-item pricing for laundry. See all rates before ordering.',
+    url: 'https://washwala.app/pricing',
+    type: 'website',
+  },
+}
 
 export default function PricingPage() {
   return (

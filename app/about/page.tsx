@@ -1,5 +1,17 @@
+import type { Metadata } from 'next'
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
+
+export const metadata: Metadata = {
+  title: 'About WashWala | Our Mission to Revolutionize Laundry',
+  description: 'Learn about WashWala\'s mission to revolutionize laundry in Mumbai with transparent pricing, live tracking, and garment safety guarantees.',
+  openGraph: {
+    title: 'About WashWala - Our Laundry Revolution',
+    description: 'Transforming laundry service in Mumbai with transparency, technology, and convenience.',
+    url: 'https://washwala.app/about',
+    type: 'website',
+  },
+}
 
 export default function AboutPage() {
   return (
